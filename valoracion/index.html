@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Card component demostrando el Box Model de CSS con catálogo de cámaras">
+    <title>Card Component | Box Model - Cámaras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Cámaras Fotográficas</h1>
+        <p class="subtitle">Ejemplo de Card Component usando Box Model con productos de fotografía</p>
+        
+        <!-- Grid de Cards -->
+        <div class="cards-grid">
+            
+            <!-- Card 1 -->
+            <article class="card">
+                <div class="card-image">
+                    <img src="imagenes/ca.jpg" alt="Cámara Réflex Profesional">
+                    <span class="badge">Nuevo</span>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Réflex Profesional</h2>
+                    <p class="card-price">
+                        <span class="price-current">$1,299.99</span>
+                        <span class="price-old">$1,499.99</span>
+                    </p>
+                    <p class="card-description">
+                        Cámara réflex digital full-frame con sensor de 24MP, grabación 4K y sistema de enfoque automático avanzado.
+                    </p>
+                    <div class="card-footer">
+                        <button class="btn-primary">Añadir al Carrito</button>
+                        <button class="btn-secondary">Ver Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+                <div class="card-image">
+                    <img src="imagenes/cam.jpg" alt="Cámara Mirrorless Compacta">
+                    <span class="badge badge-sale">-15%</span>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Mirrorless Compacta</h2>
+                    <p class="card-price">
+                        <span class="price-current">$899.99</span>
+                        <span class="price-old">$1,059.99</span>
+                    </p>
+                    <p class="card-description">
+                        Cámara mirrorless ligera con sensor APS-C, estabilización de imagen 5 ejes y conectividad Wi-Fi/Bluetooth.
+                    </p>
+                    <div class="card-footer">
+                        <button class="btn-primary">Añadir al Carrito</button>
+                        <button class="btn-secondary">Ver Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+                <div class="card-image">
+                    <img src="imagenes/cama.jpg" alt="Cámara Deportiva 4K">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Cámara Deportiva 4K</h2>
+                    <p class="card-price">
+                        <span class="price-current">$349.99</span>
+                    </p>
+                    <p class="card-description">
+                        Cámara de acción resistente al agua, grabación 4K a 60fps, pantalla táctil y amplios accesorios incluidos.
+                    </p>
+                    <div class="card-footer">
+                        <button class="btn-primary">Añadir al Carrito</button>
+                        <button class="btn-secondary">Ver Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Explicación del Box Model -->
+        <div class="box-model-explanation">
+            <h2>🎯 Box Model Aplicado en estas Cards</h2>
+            <div class="explanation-grid">
+                <div class="explanation-item">
+                    <h3>📦 Content</h3>
+                    <p>Imagen, título, precio, descripción y botones</p>
+                </div>
+                <div class="explanation-item">
+                    <h3>📏 Padding</h3>
+                    <p>20px en card-content para dar aire al contenido</p>
+                </div>
+                <div class="explanation-item">
+                    <h3>🖼️ Border</h3>
+                    <p>1px solid con border-radius de 12px</p>
+                </div>
+                <div class="explanation-item">
+                    <h3>🌌 Margin</h3>
+                    <p>Gap de 20px entre cards (usando CSS Grid)</p>
+                </div>
+                <div class="explanation-item">
+                    <h3>📐 Box-Sizing</h3>
+                    <p>border-box para width predecible de 300px</p>
+                </div>
+                <div class="explanation-item">
+                    <h3>🎨 Box-Shadow</h3>
+                    <p>Sombra sutil que se intensifica con hover</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
